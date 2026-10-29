@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgriAI – AI & ML in Agriculture</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap bar"><a class="logo" href="#">🌱 Agri<b>AI</b></a>
+    <nav><a href="#about">About</a><a href="#crop">Crop</a><a href="#soil">Soil</a><a href="#disease">Disease</a></nav></div>
+</header>
+
+<section class="hero"><div class="wrap two">
+  <div><h1>AI & ML in Agriculture</h1>
+    <p>Smarter farming with data. Get crop recommendations, soil health advice and plant disease help in seconds.</p>
+    <a class="btn" href="#crop">Get Started</a> <a class="btn ghost" href="#disease">Detect Disease</a></div>
+  <img src="images/hhh.jpg" alt="Smart farm illustration">
+</div></section>
+
+<section id="about" class="wrap sec"><h2>How AI & ML Help Farmers</h2>
+  <div class="grid3">
+    <div class="card"><span class="ic">🌾</span><h3>Crop Recommendation</h3><p>Matches soil, pH, rainfall and temperature to the best crops.</p></div>
+    <div class="card"><span class="ic">🧪</span><h3>Soil Recommendation</h3><p>Analyses pH and NPK levels and suggests fertilizers and fixes.</p></div>
+    <div class="card"><span class="ic">🍃</span><h3>Disease Detection</h3><p>Identifies likely plant diseases and gives treatment steps.</p></div>
+  </div></section>
+
+<section id="crop" class="wrap sec"><h2>🌾 Crop Recommendation System</h2>
+  <form class="panel" id="cropForm">
+    <label>Soil type<select name="soil"><option>Loamy</option><option>Clay</option><option>Sandy</option><option>Black</option></select></label>
+    <label>Soil pH<input name="ph" type="number" step="0.1" min="3" max="10" value="6.5" required></label>
+    <label>Rainfall (mm/yr)<input name="rain" type="number" min="0" value="800" required></label>
+    <label>Avg temperature (°C)<input name="temp" type="number" min="0" max="50" value="25" required></label>
+    <button class="btn">Recommend Crops</button>
+  </form><div id="cropOut" class="out"></div></section>
+
+<section id="soil" class="wrap sec"><h2>🧪 Soil Recommendation System</h2>
+  <form class="panel" id="soilForm">
+    <label>Soil type<select name="soil"><option>Loamy</option><option>Clay</option><option>Sandy</option><option>Black</option></select></label>
+    <label>Soil pH<input name="ph" type="number" step="0.1" min="3" max="10" value="6.5" required></label>
+    <label>Nitrogen<select name="n"><option>low</option><option selected>medium</option><option>high</option></select></label>
+    <label>Phosphorus<select name="p"><option>low</option><option selected>medium</option><option>high</option></select></label>
+    <label>Potassium<select name="k"><option>low</option><option selected>medium</option><option>high</option></select></label>
+    <button class="btn">Get Soil Advice</button>
+  </form><div id="soilOut" class="out"></div></section>
+
+<section id="disease" class="wrap sec"><h2>🍃 Crop Disease Detection</h2>
+  <form class="panel" id="disForm">
+    <label>Crop<select name="crop"><option>Rice</option><option>Wheat</option><option>Tomato</option><option>Potato</option><option>Cotton</option><option>Maize</option><option>Soybean</option><option>Groundnut</option></select></label>
+    <label>Main symptom<select name="symptom">
+      <option value="yellow_leaves">Yellow leaves</option><option value="brown_spots">Brown spots</option>
+      <option value="white_powder">White powder on leaves</option><option value="wilting">Wilting</option>
+      <option value="curled_leaves">Curled leaves</option></select></label>
+    <label>Leaf photo (optional)<input id="photo" type="file" accept="image/*"></label>
+    <button class="btn">Detect Disease</button>
+  </form>
+  <img id="preview" alt="" hidden>
+  <div id="disOut" class="out"></div></section>
+
+
+
+<section id="extra-features" class="wrap sec">
+  <h2>🌿 Explore More Smart Farming Features</h2>
+
+  <p class="section-intro">
+    Discover how modern technology helps farmers make better decisions.
+  </p>
+
+  <div class="grid4">
+
+    <div class="card extra-card">
+      <img src="images/wheather.jpg" alt="Weather conditions over a farm">
+      <div class="card-content">
+        <h3>Weather Insights</h3>
+        <p>Understand rainfall and temperature to plan farming activities.</p>
+      </div>
+    </div>
+
+    <div class="card extra-card">
+      <img src="images/smart.jpg" alt="Drip irrigation in a crop field">
+      <div class="card-content">
+        <h3>Smart Irrigation</h3>
+        <p>Learn how water management supports healthy crop growth.</p>
+      </div>
+    </div>
+
+    <div class="card extra-card">
+      <img src="images/pest.jpg" alt="Insect pest on a crop leaf">
+      <div class="card-content">
+        <h3>Pest Management</h3>
+        <p>Explore common crop pests and preventive practices.</p>
+      </div>
+    </div>
+
+    <div class="card extra-card">
+      <img src="images/sus.jpg" alt="Healthy green crops in a farm">
+      <div class="card-content">
+        <h3>Sustainable Farming</h3>
+        <p>Discover crop rotation and soil conservation methods.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer><div class="wrap">© 2026 AgriAI · AI & ML in Agriculture · Advice is guidance only; consult a local agronomist.</div></footer>
+<script src="app.js"></script>
+</body></html>
